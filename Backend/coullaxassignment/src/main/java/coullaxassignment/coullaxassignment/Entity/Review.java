@@ -30,6 +30,8 @@ public class Review {
     private String author;
     private int rating;
     private  String review;
+
+    @CreationTimestamp
     private LocalDate reviewDate;
 
 

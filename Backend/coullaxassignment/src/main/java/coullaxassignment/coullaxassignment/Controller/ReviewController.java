@@ -46,6 +46,13 @@ public class ReviewController {
         return new ResponseEntity<>(status, HttpStatus.OK);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<ReviewDTO> getReviewById(@PathVariable  int id) {
+
+        ReviewDTO review = reviewService.getReviewById(id);
+        return new ResponseEntity<>(review, HttpStatus.OK);
+    }
+
 
 
 

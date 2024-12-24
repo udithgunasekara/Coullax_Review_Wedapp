@@ -11,4 +11,6 @@ public interface ReviewService {
     ReviewDTO updateReview(int id, ReviewDTO reviewDTO);
 
     String deleteReview(int id);
+
+    ReviewDTO getReviewById(int id);
 }

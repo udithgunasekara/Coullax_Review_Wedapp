@@ -62,5 +62,11 @@ public String deleteReview(int id) {
         throw new ResourceNotFound("Review with id " + id + " not found");
     }
 }
+
+    @Override
+    public ReviewDTO getReviewById(int id) {
+        Review review = reviewRepo.findById(id).orElseThrow(() -> new ResourceNotFound("No review found"));
+        return ReviewMapper.mapToReviewDTO(review);
+    }
 }
 
