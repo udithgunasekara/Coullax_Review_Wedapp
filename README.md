@@ -10,12 +10,12 @@
 1. Fully functional CRUD operations.
 2. User interface requirements fully implemented.
 3. Review model requirements covered.
-4. Backend development adheres to the SOLID principles.
+4. Try to use SOLID principles in the Backend.
 5. Unique book catalog feature:
-   - Users can filter books by title and author to view available reviews.
+   - Users can see filtered books by title and author to view available reviews.
    - Each book displays its associated reviews, ratings, and the last modified date.
 6. Users can delete or update reviews for a selected book.
-7. Responsive UI design ensures compatibility across devices.
+7. Implement responsive UI design.
 
 ## Backend Development
 - Implemented using the **MVC architecture**.
@@ -26,7 +26,7 @@
 - Implemented routing using **React Router DOM**.
 
 ### Note:
-Based on the project requirements and complexity, data was passed using **props drilling** and the **useLocation hook** (React Router DOM), instead of using the Context API.
+Based on the project requirements and complexity, I decided to use **props drilling** and the **useLocation hook** (React Router DOM) for data pass, instead of using the **Context API**.
 
 ## Setup Instructions
 1. Clone the repository locally.
@@ -40,8 +40,10 @@ Based on the project requirements and complexity, data was passed using **props 
      ```
 4. For the frontend:
    - Run `npm install` to install dependencies.
+   - Run `npm start dev`.
+
 5. Verify Cross-Origin Resource Sharing (CORS) settings:
-   - Ensure the backend CORS configuration matches the frontend project. If necessary, update the `CorsConfig` file:
+   - Ensure the backend CORS configuration matches the frontend project. If necessary, update the `CorsConfig` file (Config > CorsConfig):
      ```java
      "http://localhost:3000", "http://127.0.0.1:3000"
      ```
