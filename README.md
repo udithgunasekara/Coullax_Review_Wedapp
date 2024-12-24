@@ -27,6 +27,7 @@
 
 ### Note:
 Based on the project requirements and complexity, I decided to use **props drilling** and the **useLocation hook** (React Router DOM) for data pass, instead of using the **Context API**.
+Lombok dependancy didn't work in my project
 
 ## Setup Instructions
 1. Clone the repository locally.
